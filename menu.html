@@ -15,72 +15,200 @@
     <img src="1.png" alt="kép">
   </div>
     <nav>
-        <a href="index.html">Főoldal</a>
-        <a href="menu.html" class="active">Menü</a>
+        <a href="index.html">Основна</a>
+        <a href="menu.html" class="active">Меню</a>
     </nav>
 </header>
 
 <main>
     <div class="menu-controls">
-        <button onclick="showMenu('coffee')" class="active">Kávé</button>
-        <button onclick="showMenu('pizza')">Pizza</button>
-        <button onclick="showMenu('dessert')">Desszert</button>
-    </div>
 
-    <section id="coffee" class="menu-section active">
-        <h2>Kávék</h2>
+
+        <button onclick="showMenu('coffee')" >Кава</button>
+        <button onclick="showMenu('pizza')">Піца</button>
+        <button onclick="showMenu('dessert')">Fast Food</button>
+        <button onclick="showMenu('ital')">Напої</button>
+        <button onclick="showMenu('ital')">Бабл ті</button>
+
+
+
+    </div><hr>
+    
+    <section ind="ital" class="menu-section">
+
+        <div class="menu-controls"><button onclick="toggleImage('i1')">Брауні</button></div>
+        <div class="image-container" id="i1"><img src="1.png" alt="kép"><p>(томатна основа, тунець, фіолетова цибуля, моцарела, каперси, помідор)</p> </div>
+
+
+
+
+
+    </section>
+
+
+
+    <section id="coffee" class="menu-section">
+        <h2>Кава</h2>
         
 
 
 
 
-            <div class="menu-controls"><button onclick="toggleImage('1')">Esspresso</button></div>
-        
-            <div class="image-container" id="1"><img src="1.png" alt="kép"></div>
+            <div class="menu-controls"><button onclick="toggleImage('k1')">Еспресо</button></div>
+            <div class="image-container" id="k1"><img src="1.png" alt="kép"><p>10 грн</p></div>
 
 
 
-            <div class="menu-controls"><button onclick="toggleImage('2')">Káposztás paszuj leves</button></div>
-        
-            <div class="image-container" id="2"><img src="1.png" alt="kép"></div>
+            <div class="menu-controls"><button onclick="toggleImage('k2')">Еспресо з молоком</button></div>
+            <div class="image-container" id="k2"><img src="1.png" alt="kép"><p>10 грн</p> </div>
 
 
 
-            <div class="menu-controls"><button onclick="toggleImage('3')">Esspresso</button></div>
-        
-            <div class="image-container" id="3"><img src="1.png" alt="kép"></div>
+            <div class="menu-controls"><button onclick="toggleImage('k3')">Капучино</button></div>
+            <div class="image-container" id="k3"><img src="1.png" alt="kép"><p>10 грн</p></div>
+
+            <div class="menu-controls"><button onclick="toggleImage('k4')">Лате</button></div>
+            <div class="image-container" id="k4"><img src="1.png" alt="kép"><p>10 грн</p></div>
+            
+            <div class="menu-controls"><button onclick="toggleImage('k5')">Айс-лате</button></div>
+            <div class="image-container" id="k5"><img src="1.png" alt="kép"><p>10 грн</p></div>
+
+            <div class="menu-controls"><button onclick="toggleImage('k6')">Ванільне лате</button></div>
+            <div class="image-container" id="k6"><img src="1.png" alt="kép"><p>10 грн</p></div>
+
+            <div class="menu-controls"><button onclick="toggleImage('k7')">Американо</button></div>
+            <div class="image-container" id="k7"><img src="1.png" alt="kép"><p>10 грн</p></div>
+
+            <div class="menu-controls"><button onclick="toggleImage('k8')">Американо з молоком</button></div>
+            <div class="image-container" id="k8"><img src="1.png" alt="kép"><p>10 грн</p></div>
+
+            <div class="menu-controls"><button onclick="toggleImage('k9')">Раф кава</button></div>
+            <div class="image-container" id="k9"><img src="1.png" alt="kép"><p>10 грн</p></div>
+
+            <div class="menu-controls"><button onclick="toggleImage('k10')">Гарячий шоколад</button></div>
+            <div class="image-container" id="k10"><img src="1.png" alt="kép"><p>10 грн</p></div>
+
+            <div class="menu-controls"><button onclick="toggleImage('k11')">Какао</button></div>
+            <div class="image-container" id="k11"><img src="1.png" alt="kép"><p>10 грн</p></div>
+
+            
+
 
 
 
             
             
     </section>
+    
+ 
+
 
     <section id="pizza" class="menu-section">
-        <h2>Pizzák</h2>
-        <ul>
-            <li onclick="toggleImage(this)">
-                Margherita – 1800 Ft
-                <img src="https://via.placeholder.com/150" class="food-img">
-            </li>
-            <li onclick="toggleImage(this)">
-                Sonkás – 2200 Ft
-                <img src="https://via.placeholder.com/150" class="food-img">
-            </li>
-            <li onclick="toggleImage(this)">
-                Hawaii – 2300 Ft
-                <img src="https://via.placeholder.com/150" class="food-img">
-            </li>
-        </ul>
+        <h2>ПІЦА</h2>
+        
+        <div class="menu-controls"><button onclick="toggleImage('4')">Брауні</button></div>
+        <div class="image-container" id="4"><img src="1.png" alt="kép"><p>(томатна основа, тунець, фіолетова цибуля, моцарела, каперси, помідор)</p> </div>
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('5')">Сицилія</button></div>
+        <div class="image-container" id="5"><img src="1.png" alt="kép"><p>(томатна основа, салямі, кукурудза, моцарела, пармезан)</p> </div>
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('6')">Монако</button></div>
+        <div class="image-container" id="6"><img src="1.png" alt="kép"><p>(вершкова основа, курка, груша, шинка, моцарела, кукурудза, бринза)</p> </div>
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('7')">Double cheese</button></div>
+        <div class="image-container" id="7"><img src="1.png" alt="kép"><p>(томатна основа, шинка, подвійна моцарела)</p> </div>
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('8')">Шинка гриби</button></div>
+        <div class="image-container" id="8"><img src="1.png" alt="kép"><p>(вершкова основа, шинка, гриби, моцарела, пармезан)</p> </div>
+
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('9')">Cool</button></div>
+        <div class="image-container" id="9"><img src="1.png" alt="kép"><p>(томатна основа, шинка, бекон, моцарела, чеддер, помідор)</p> </div>
+
+
+        <div class="menu-controls"><button onclick="toggleImage('10')">Meat</button></div>
+        <div class="image-container" id="10"><img src="1.png" alt="kép"><p>(томатна основа, шинка, бекон, моцарела, кукурудза, помідор)</p> </div>
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('11')">Four cheese</button></div>
+        <div class="image-container" id="11"><img src="1.png" alt="kép"><p>(вершкова основа, моцарела, пармезан, горгонзола)</p> </div>
+
+
+        <div class="menu-controls"><button onclick="toggleImage('12')">Гаваї</button></div>
+        <div class="image-container" id="12"><img src="1.png" alt="kép"><p>(вершкова основа, шинка, курка, ананас, моцарела)</p> </div>
+
+
+        <div class="menu-controls"><button onclick="toggleImage('13')">Гірос</button></div>
+        <div class="image-container" id="13"><img src="1.png" alt="kép"><p>(м’ясо гірос, овочі,гірос соус)</p> </div>
+
+
+
+      
+    
+
+
+
+
+
+
+
     </section>
 
     <section id="dessert" class="menu-section">
-        <h2>Desszertek</h2>
-        <ul>
-            <li>Brownie – 1200 Ft</li>
-            <li>Sajttorta – 1300 Ft</li>
-            <li>Macaron – 400 Ft/db</li>
-        </ul>
+        <h2>Fast Food</h2>
+        <div class="menu-controls"><button onclick="toggleImage('14')">Буріто</button></div>
+        <div class="image-container" id="14"><img src="1.png" alt="kép"><p>тортилья з м’ясом (курка або свинина+яловичина), овочі, соус</p> </div>
+        
+
+        <div class="menu-controls"><button onclick="toggleImage('15')">Гірос</button></div>
+        <div class="image-container" id="15"><img src="1.png" alt="kép"><p>м’ясо (зазвичай курка/свинина), овочі, соус, піта або тарілка</p> </div>
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('16')">Цезар</button></div>
+        <div class="image-container" id="16"><img src="1.png" alt="kép"><p>курка, салат, сир, соус Цезар</p> </div>
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('17')">Нагетси</button></div>
+        <div class="image-container" id="17"><img src="1.png" alt="kép"><p>куряче філе в паніровці</p> </div>
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('18')">Крильця</button></div>
+        <div class="image-container" id="18"><img src="1.png" alt="kép"><p>курячі крила</p> </div>
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('19')">Сир фрі</button></div>
+        <div class="image-container" id="19"><img src="1.png" alt="kép"><p>смажений сир у паніровці</p> </div>
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('20')">Камамбер</button></div>
+        <div class="image-container" id="20"><img src="1.png" alt="kép"><p>сир камамбер із журавлиновим соусом</p> </div>
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('21')">Відбивна</button></div>
+        <div class="image-container" id="21"><img src="1.png" alt="kép"><p> куряче філе в паніровці</p> </div>
+
+
+
+        <div class="menu-controls"><button onclick="toggleImage('22')">Сендвіч</button></div>
+        <div class="image-container" id="22"><img src="1.png" alt="kép"><p>хліб, м’ясо/сир, овочі</p> </div>
+       
     </section>
 </main>
 
@@ -107,15 +235,7 @@ function showMenu(menuId) {
 
     event.target.classList.add('active');
 
-    function toggleImage(element) {
-    const img = element.querySelector('.food-img');
-
-    if (img.classList.contains('show')) {
-        img.classList.remove('show');
-    } else {
-        img.classList.add('show');
-    }
-}
+    
 }
 </script>
 

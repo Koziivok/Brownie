@@ -56,6 +56,8 @@ li{
 
 .menu-controls {
     margin: 30px 0;
+    font-weight: bold;
+    font-size: large;
 }
 
 .menu-controls button {
@@ -138,7 +140,7 @@ footer {
 }
 
 .menu-controls {
-    margin: 40px 0;
+    margin: 10px 0;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -204,6 +206,8 @@ margin: 0;
     align-items: center;
     width: 100%;
     overflow: hidden;
+    flex-direction: column; 
+    
   
     max-height: 0;
     transition: max-height 0.4s ease;
@@ -211,7 +215,7 @@ margin: 0;
   
   /* nyitott állapot */
   .image-container.open {
-    max-height: 200px; /* elég nagy hogy a kép kiférjen */
+    max-height: 1000px; /* elég nagy hogy a kép kiférjen */
   }
   
   /* kép stílus */
@@ -258,8 +262,8 @@ color: #555;
 @media (max-width: 768px) {
 
     .image-container img {
-        width: 170px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
       }
 
     header {
