@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menü | BROWNIE coffee & food</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+<header>
+   
+<div class="circle">
+    <img src="1.png" alt="kép">
+  </div>
+    <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="menu.html" class="active">Menü</a>
+    </nav>
+</header>
+
+<main>
+    <div class="menu-controls">
+        <button onclick="showMenu('coffee')" class="active">Kávé</button>
+        <button onclick="showMenu('pizza')">Pizza</button>
+        <button onclick="showMenu('dessert')">Desszert</button>
+    </div>
+
+    <section id="coffee" class="menu-section active">
+        <h2>Kávék</h2>
+        
+
+
+
+
+            <div class="menu-controls"><button onclick="toggleImage('1')">Esspresso</button></div>
+        
+            <div class="image-container" id="1"><img src="1.png" alt="kép"></div>
+
+
+
+            <div class="menu-controls"><button onclick="toggleImage('2')">Káposztás paszuj leves</button></div>
+        
+            <div class="image-container" id="2"><img src="1.png" alt="kép"></div>
+
+
+
+            <div class="menu-controls"><button onclick="toggleImage('3')">Esspresso</button></div>
+        
+            <div class="image-container" id="3"><img src="1.png" alt="kép"></div>
+
+
+
+            
+            
+    </section>
+
+    <section id="pizza" class="menu-section">
+        <h2>Pizzák</h2>
+        <ul>
+            <li onclick="toggleImage(this)">
+                Margherita – 1800 Ft
+                <img src="https://via.placeholder.com/150" class="food-img">
+            </li>
+            <li onclick="toggleImage(this)">
+                Sonkás – 2200 Ft
+                <img src="https://via.placeholder.com/150" class="food-img">
+            </li>
+            <li onclick="toggleImage(this)">
+                Hawaii – 2300 Ft
+                <img src="https://via.placeholder.com/150" class="food-img">
+            </li>
+        </ul>
+    </section>
+
+    <section id="dessert" class="menu-section">
+        <h2>Desszertek</h2>
+        <ul>
+            <li>Brownie – 1200 Ft</li>
+            <li>Sajttorta – 1300 Ft</li>
+            <li>Macaron – 400 Ft/db</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 BROWNIE coffee & food</p>
+</footer>
+
+<script>
+
+function toggleImage(imgid) {
+  const box = document.getElementById(imgid);
+  box.classList.toggle("open");
+}
+
+
+function showMenu(menuId) {
+    const sections = document.querySelectorAll('.menu-section');
+    const buttons = document.querySelectorAll('.menu-controls button');
+
+    sections.forEach(section => section.classList.remove('active'));
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    document.getElementById(menuId).classList.add('active');
+
+    event.target.classList.add('active');
+
+    function toggleImage(element) {
+    const img = element.querySelector('.food-img');
+
+    if (img.classList.contains('show')) {
+        img.classList.remove('show');
+    } else {
+        img.classList.add('show');
+    }
+}
+}
+</script>
+
+</body>
+</html>

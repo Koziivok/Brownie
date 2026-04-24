@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Animált kép lenyitás</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* kattintható szöveg */
+.text {
+  cursor: pointer;
+  color: #1a73e8;
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* animált konténer */
+.image-container {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+
+/* nyitott állapot */
+.image-container.open {
+  max-height: 200px; /* elég nagy hogy a kép kiférjen */
+}
+
+/* kép stílus */
+.image-container img {
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px auto 0 auto;
+
+  border-radius: 50%;
+  border: 3px solid black;
+
+  display: block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="text" onclick="toggleImage('imgBox')">
+  Kattints ide a kép megjelenítéséhez
+</div>
+
+<div class="image-container" id="imgBox">
+  <img src="1.jpeg" alt="kép">
+</div>
+
+
+<!-- csak példa, hogy látszódjon a letolás -->
+<p>Ez egy alatta lévő szöveg, amit a kép le fog tolni.</p>
+<div class="text" onclick="toggleImage('imgBox1')">
+    Kattints ide a kép megjelenítéséhez
+  </div>
+<div class="image-container" id="imgBox1">
+    <img src="1.jpeg" alt="kép">
+  </div>
+
+<script>
+function toggleImage(imgid) {
+  const box = document.getElementById(imgid);
+  box.classList.toggle("open");
+}
+</script>
+
+</body>
+</html>
